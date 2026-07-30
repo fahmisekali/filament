@@ -17,10 +17,10 @@ class ItemsTable
                 TextColumn::make('category_id')
                     ->numeric()
                     ->sortable(),
-                TextColumn::make('name')
+                TextColumn::make('category.name')
                     ->searchable(),
                 TextColumn::make('price')
-                    ->money()
+                    ->money('Rp.')
                     ->sortable(),
                 TextColumn::make('stock')
                     ->numeric()
